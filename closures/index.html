@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Curso de JavaScript</title>
+</head>
+<body>
+	
+	<button id="btn">Click</button>
+	<script>
+		(function(){
+			function $(selector){
+			return document.querySelector(selector);
+		};
+
+		$('#btn').addEventListener('click', function(){
+			alert('hola');
+		});
+
+		setTimeout(function(){
+			console.log('esto es un setTimeout de 2s');
+			console.log(hola("rodr7go"));
+		}, 2000);
+
+		})();
+
+		function hola(name){
+			function constructor(){
+				return "hola " + name;
+			}
+			return constructor();
+		}
+	</script>
+</body>
+</html>
