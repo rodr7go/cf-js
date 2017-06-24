@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+</head>
+<body>
+
+
+<script>
+    function Tutor (nombre, apellido) {
+        this.nombre = nombre;
+        this.saludar = function (){
+            console.log('hola mi nombre es ' + this.nombre);
+            }
+
+        if (typeof  apellido !== 'undefined'){
+            this.nombre_completo = nombre + ' ' + apellido;
+            }
+    }
+
+    Tutor.prototype.edad = 26;
+
+    var rodrigo = new Tutor('Rodrigo', 'Lopez');
+    var jose = new Tutor('Jose');
+    Tutor.prototype.bienvenida = function(){
+        console.log('bienvenidos al nuevo tutorial');
+    };
+//    rodrigo.saludar();
+//    console.log(rodrigo.nombre_completo);
+//    rodrigo.bienvenida();
+//    jose.bienvenida();
+//    console.log(rodrigo.edad);
+//    console.log(jose.edad);
+</script>
+</body>
+</html>

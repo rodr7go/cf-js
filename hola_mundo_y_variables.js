@@ -34,8 +34,8 @@ Modulo = %
 
 // console.log(Math.pow(2, 3));
 
-var nombre = 'Rodrigo';
-var cadena = 'hola';
+// var nombre = 'Rodrigo';
+// var cadena = 'hola';
 
 // console.log(nombre.indexOf('Rodrigo'));
 
@@ -50,8 +50,8 @@ var cadena = 'hola';
 // console.log(nombre.toUpperCase());
 // console.log(nombre.toLowerCase());
 
-var numero_uno = 23;
-var numero_dos = "23";
+// var numero_uno = 23;
+// var numero_dos = "23";
 
 // if (numero_uno < numero_dos) {
 // 	console.log('Entre al bloque');
@@ -118,9 +118,9 @@ var numero_dos = "23";
 // var div = document.getElementsByTagName('div');
 // var div = document.querySelector('.mi-clase');
 
-function $(selector){
-	return document.querySelector(selector);
-}
+// function $(selector){
+// 	return document.querySelector(selector);
+// }
 
 // var div = $('.mi-clase');
 // console.log(div);
@@ -218,14 +218,74 @@ function $(selector){
 // });
 // console.log(palabra);
 
-var numeros = [20,15,20,15];
-var resultado = numeros.reduce(function(val_ant_ret, val_actual, index, arreglo){
-	return val_ant_ret + val_actual;
-});
-console.log(resultado);
+// var numeros = [20,15,20,15];
+// var resultado = numeros.reduce(function(val_ant_ret, val_actual, index, arreglo){
+// 	return val_ant_ret + val_actual;
+// });
+// console.log(resultado);
+//
+// var suma = 0;
+// for(var i = 0; i < numeros.length; i++){
+// 	suma += numeros[i];
+// }
+// console.log(suma);
 
-var suma = 0;
-for(var i = 0; i < numeros.length; i++){
-	suma += numeros[i];
+// Template string ------------------------------>
+
+// var template = `Hola
+//  	esto es un salto de linea y tabulacion
+//  mundo :)`;
+// console.log(template);
+
+// var nombre = 'Rodrigo';
+// var saludo = `hola ${nombre} buen dia`;
+// function nombre(){
+//     return 2+3;
+// };
+// // var saludo = `hola ${nombre()} buen dia`;
+// var saludo = `hola ${'codigo ' + 'Rodrigo'} buen dia`;
+//
+// console.log(saludo);
+
+// Arrow Functions ------------------------------>
+
+// var numeros = [1,2,3,4,5];
+
+// var elevado_2 = numeros.map(function(n){
+// 	return n*n;
+// });
+// var elevado_2 = numeros.map( (n)=> n*n );
+// console.log(elevado_2);
+
+// function Tutor(){
+// 	this.nombre = 'Rodrigo';
+//
+//
+// 	setTimeout(()=> {
+// 		this.nombre =  'Codigo facilito';
+// 	},500)
+// }
+//
+// var tutor = new Tutor();
+// console.log(tutor.nombre);
+//
+// setTimeout(function(){
+// 	console.log(tutor.nombre);
+// }, 1000);
+
+
+// Clases ES6
+
+class Tutor{
+	constructor(nombre, last_name){
+		this.nombre = nombre;
+		this.last_name = last_name;
+	}
+
+	fullname(){
+		return this.nombre + ' ' + this.last_name;
+	}
 }
-console.log(suma);
+
+var tutor = new Tutor('Ezequiel', 'lopez');
+console.log(tutor.fullname());

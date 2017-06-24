@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getters y Setters</title>
+</head>
+<body>
+<script>
+    var curso = {
+        titulo: 'Curso de JS',
+        videos: 19,
+        tutor_value: 'Uriel',
+        get tutor(){
+            return this.tutor_value;
+        },
+        set tutor(tutor){
+            if(tutor == '' || 'undefined'){
+                return
+            }
+            this.tutor_value = tutor;
+        }
+//        getTutor: function(){
+//            return this.tutor;
+//        },
+//        setTutor: function(tutor){
+//            this.tutor = tutor;
+//        }
+    };
+//    curso.tutor = 'Rodrigo :)';
+    curso.tutor = undefined;
+    console.log(curso.tutor_value);
+</script>
+</body>
+</html>
