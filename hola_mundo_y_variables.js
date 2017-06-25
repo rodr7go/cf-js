@@ -276,16 +276,27 @@ Modulo = %
 
 // Clases ES6
 
-class Tutor{
-	constructor(nombre, last_name){
-		this.nombre = nombre;
-		this.last_name = last_name;
-	}
+// class Tutor{
+// 	constructor(nombre, last_name){
+// 		this.nombre = nombre;
+// 		this.last_name = last_name;
+// 	}
+//
+// 	fullname(){
+// 		return this.nombre + ' ' + this.last_name;
+// 	}
+// }
+//
+// var tutor = new Tutor('Ezequiel', 'lopez');
+// console.log(tutor.fullname());
 
-	fullname(){
-		return this.nombre + ' ' + this.last_name;
-	}
-}
 
-var tutor = new Tutor('Ezequiel', 'lopez');
-console.log(tutor.fullname());
+// Let --------------------------------------->
+// let -> var
+// init();
+// function init(){
+// 	if(true){
+//         var nombre = 'Rodrigo';
+//     }
+//     console.log(nombre);
+// }
